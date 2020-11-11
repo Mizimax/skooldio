@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["jsx-a11y", "prettier"],
+  "rules": {
+    "semi": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "indent": [0, 2],
+    "quotes": [2, "single", "avoid-escape"],
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1,
+        "maxEOF": 0,
+        "maxBOF": 0
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true
+      }
+    ]
+  }
+}
